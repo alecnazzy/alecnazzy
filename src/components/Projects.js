@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import CardFlip from "./ui/card-flip";
+import CardFlip from "./UI/card-flip";
 
 function Projects() {
   const [projects, setProjects] = useState([

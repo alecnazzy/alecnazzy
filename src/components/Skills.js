@@ -1,4 +1,4 @@
-import TextReveal from "./ui/text-reveal";
+import TextReveal from "./UI/text-reveal";
 
 function Skills() {
   return (
