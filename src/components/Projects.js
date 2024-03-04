@@ -1,26 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import ProjectShowcase from "./ui/project-showcase";
 import CardFlip from "./ui/card-flip";
 
 function Projects() {
   const [projects, setProjects] = useState([
-    // {
-    //   id: 1,
-    //   name: "GeekText",
-    //   language: "PHP",
-    //   framework: "Laravel",
-    //   description:
-    //     "A collaborative project to build a fullstack e-commerce website for a bookstore.",
-    // },
-    // {
-    //   id: 2,
-    //   name: "alecnazzy.com",
-    //   language: "Javascript",
-    //   framework: "React",
-    //   description: "My own personal website.",
-    // },
-
     {
       id: 1,
       name: "GeekText",
@@ -35,8 +18,6 @@ function Projects() {
       stack: ["JavaScript", "React", "Tailwind"],
     },
   ]);
-
-  //  write a fucntion that filter through the stack array in the objects and sorts them based on the selected stack
 
   const [filter, setFilter] = useState({});
   const handleFilterChange = (key, value) => {
@@ -57,28 +38,6 @@ function Projects() {
     <div id="projects">
       <h1 className="text-5xl text-gray-800">Some of my projects</h1>
 
-      {/* <select
-        value={filter.language || ""}
-        onChange={(e) => handleFilterChange("language", e.target.value)}
-        className="mt-5 rounded-md p-2"
-      >
-        <option value="">All languages</option>
-        <option value="Javascript">JavaScript</option>
-        <option value="PHP">PHP</option>
-      </select>
-
-      <ul className="flex flex-row flex-wrap justify-center align-center">
-        {filteredProjects.map((project) => (
-          <li key={project.id} className="mr-5 ml-5 mb-10">
-            <ProjectShowcase
-              title={project.name}
-              description={project.description}
-            />
-          </li>
-        ))}
-      </ul> */}
-
-      {/* filter through projects based on stack using a select tag that iterates through stack array in object*/}
       <select
         value={filter.stack || ""}
         onChange={(e) => handleFilterChange("stack", e.target.value)}
