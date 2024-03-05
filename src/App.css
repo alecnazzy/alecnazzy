@@ -3,9 +3,9 @@
 }
 
 body {
-  background: linear-gradient(-45deg, #4da5ed, #05fefe, #0746bc);
+  background: linear-gradient(-45deg, #1f8fea, #05fefe, #0746bc);
   background-size: 400% 400%;
-  animation: gradient 19s ease infinite;
+  animation: gradient 15s ease infinite;
   height: 100vh;
 }
 

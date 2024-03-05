@@ -4,10 +4,11 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        "text-reveal": "text-reveal 0.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s",
+        "text-animate":
+          "text-animate 0.7s cubic-bezier(0.77, 0, 0.175, 1) 0.5s",
       },
       keyframes: {
-        "text-reveal": {
+        "text-animate": {
           "0%": {
             transform: "translate(0, 100%)",
           },

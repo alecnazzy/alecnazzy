@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import CardFlip from "./UI/card-flip";
 
-function Projects() {
+export default function Projects() {
   const [projects, setProjects] = useState([
     {
       id: 1,
@@ -15,7 +15,7 @@ function Projects() {
       id: 2,
       name: "alecnazzy.com",
       description: "My own personal website.",
-      stack: ["JavaScript", "React", "Tailwind"],
+      stack: ["JavaScript", "React", "Tailwind CSS"],
     },
   ]);
 
@@ -41,9 +41,9 @@ function Projects() {
       <select
         value={filter.stack || ""}
         onChange={(e) => handleFilterChange("stack", e.target.value)}
-        className="mt-5 rounded-md p-2"
+        className="mt-5 rounded-md p-2 cursor-pointer transition-all duration-300 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-opacity-50"
       >
-        <option value="">All stacks</option>
+        <option value="">All</option>
         <option value="JavaScript">JavaScript</option>
         <option value="React">React</option>
         <option value="PHP">PHP</option>
@@ -64,5 +64,3 @@ function Projects() {
     </div>
   );
 }
-
-export default Projects;

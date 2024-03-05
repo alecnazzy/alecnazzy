@@ -6,7 +6,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/UI/footer";
 import Skills from "./components/Skills";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Navbar />
@@ -18,5 +18,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

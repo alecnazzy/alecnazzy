@@ -1,6 +1,6 @@
 export default function CardFlip({ title, description, stack }) {
   return (
-    <div className="relative w-96 h-60 rounded-2xl text-white overflow-hidden cursor-pointer transition-all duration-700 card">
+    <div className="relative w-96 h-60 rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 card">
       <CardFront title={title} description={description} />
       <CardBack stack={stack} />
     </div>
@@ -19,7 +19,7 @@ function CardFront({ title, description }) {
       rounded-2xl
     >
       <div className="text-center">
-        <h2 className="text-2xl">{title}</h2>
+        <h2 className="text-2xl mb-4">{title}</h2>
         <p className="text-sm">{description}</p>
       </div>
     </div>
@@ -29,7 +29,6 @@ function CardFront({ title, description }) {
 function CardBack({ stack = [] }) {
   return (
     <div className="absolute inset-0 w-full h-full flex justify-center items-center bg-gray-800 text-sky-300 transition-all z-10 card-back">
-      {/* array of tools used */}
       <ul>
         {stack.map((item, index) => (
           <li key={index}>{item}</li>

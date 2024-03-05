@@ -1,4 +1,4 @@
-function Navbar() {
+export default function Navbar() {
   return (
     <div className="w-full top-0 mt-1 text-lg text-gray-800">
       <ul className="flex justify-center justify-items-center">
@@ -12,5 +12,3 @@ function Navbar() {
     </div>
   );
 }
-
-export default Navbar;
