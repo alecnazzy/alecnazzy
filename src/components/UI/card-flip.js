@@ -10,7 +10,7 @@ export default function CardFlip({ title, description, stack }) {
 function CardFront({ title, description }) {
   return (
     <div
-      className="absolute inset-0 w-full h-full flex justify-center items-center text-center bg-gray-800 text-sky-300 transition-all duration-100 delay-200 z-20 hover:opacity-0"
+      className="absolute inset-0 w-full h-full flex justify-center items-center text-center bg-gray-800 text-white transition-all duration-100 delay-200 z-20 hover:opacity-0"
       mx-auto
       w-80
       h-64
@@ -28,7 +28,7 @@ function CardFront({ title, description }) {
 
 function CardBack({ stack = [] }) {
   return (
-    <div className="absolute inset-0 w-full h-full flex justify-center items-center bg-gray-800 text-sky-300 transition-all z-10 card-back">
+    <div className="absolute inset-0 w-full h-full flex justify-center items-center bg-gray-800 text-white transition-all z-10 card-back">
       <ul>
         {stack.map((item, index) => (
           <li key={index}>{item}</li>

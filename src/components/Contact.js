@@ -4,21 +4,7 @@ export default function Contact() {
       className="mt-32 mb-32 flex flex-col justify-center align-center items-center"
       id="contact"
     >
-      <h1 className="text-5xl text-gray-800">Connect with me</h1>
-      <p className="text-2xl text-gray-800 mt-5 w-fit group">
-        <a
-          href="https://www.instagram.com/alecnazzy/"
-          rel="noreferrer"
-          target="_blank"
-        >
-          Instagram
-        </a>
-        <img
-          src="icons/instagram-icon.png"
-          alt="instagram icon"
-          className="h-5 w-5 ml-2 inline-block invisible group-hover:visible"
-        />
-      </p>
+      <h1 className="text-5xl text-gray-800">Other places to find me</h1>
       <p className="text-2xl text-gray-800 mt-5 w-fit group">
         <a href="https://github.com/alecnazzy" rel="noreferrer" target="_blank">
           Github

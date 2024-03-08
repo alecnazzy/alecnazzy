@@ -6,16 +6,29 @@ export default function Projects() {
   const [projects, setProjects] = useState([
     {
       id: 1,
+      name: "alecnazzy.com",
+      description: "My own personal website.",
+      stack: ["JavaScript", "React", "Tailwind CSS"],
+    },
+    {
+      id: 2,
+      name: "Tobey Blog",
+      description: "A blog about my dog.",
+      stack: [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Fastify",
+        "MongoDB",
+        "Tailwind CSS",
+      ],
+    },
+    {
+      id: 3,
       name: "GeekText",
       description:
         "A collaborative project to build a fullstack e-commerce website for a bookstore.",
       stack: ["PHP", "Laravel", "MySQL"],
-    },
-    {
-      id: 2,
-      name: "alecnazzy.com",
-      description: "My own personal website.",
-      stack: ["JavaScript", "React", "Tailwind CSS"],
     },
   ]);
 
@@ -35,7 +48,7 @@ export default function Projects() {
   });
 
   return (
-    <div id="projects">
+    <div id="projects" className="mt-12 mb-36">
       <h1 className="text-5xl text-gray-800">Some of my projects</h1>
 
       <select
@@ -45,9 +58,8 @@ export default function Projects() {
       >
         <option value="">All</option>
         <option value="JavaScript">JavaScript</option>
-        <option value="React">React</option>
+        <option value="Node.js">Node.js</option>
         <option value="PHP">PHP</option>
-        <option value="Laravel">Laravel</option>
       </select>
 
       <ul className="flex flex-row flex-wrap justify-center align-center mt-5">
