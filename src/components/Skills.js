@@ -7,24 +7,23 @@ export default function Skills() {
         <div>
           <h2 className="text-2xl text-gray-800 mb-8">Languages</h2>
 
-          <TextAnimate text="JavaScript" img="icons/javascript-icon.png" />
+          <TextAnimate text="TypeScript" img="icons/ts-icon.png" />
           <TextAnimate text="Node.js" img="icons/nodejs-icon.png" />
-          <TextAnimate text="PHP" img="icons/php-icon2.png" />
+          {/* <TextAnimate text="PHP" img="icons/php-icon2.png" /> */}
         </div>
         <div>
-          <h2 className="text-2xl text-gray-800 mb-8">Frameworks</h2>
+          <h2 className="text-2xl text-gray-800 mb-8">Technologies</h2>
 
           <TextAnimate text="React" img="icons/react-icon2.png" />
 
           <TextAnimate text="Fastify" img="icons/fastify-icon.png" />
 
-          <TextAnimate text="Laravel" img="icons/laravel-icon2.png" />
+          {/* <TextAnimate text="Laravel" img="icons/laravel-icon2.png" /> */}
         </div>
         <div>
           <h2 className="text-2xl text-gray-800 mb-8 ">Tools</h2>
 
-          <TextAnimate text="Tailwind CSS" img="icons/tailwind-icon.png" />
-          <TextAnimate text="Figma" img="icons/figma-icon.png" />
+          <TextAnimate text="Firebase" img="icons/firebase-icon.png" />
           <TextAnimate text="MongoDB" img="icons/mongodb-icon.png" />
         </div>
       </div>

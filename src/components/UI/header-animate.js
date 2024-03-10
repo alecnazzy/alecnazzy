@@ -1,19 +1,21 @@
 import React, { useState, useEffect } from "react";
 
 export default function HeaderAnimate({ headers }) {
-  const [header, setHeader] = useState(0);
+  const [currentHeaderIndex, setCurrentHeaderIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setHeader((header) => (header + 1) % headers.length);
+      setCurrentHeaderIndex((index) => (index + 1) % headers.length);
     }, 3000);
 
     return () => clearInterval(interval);
   }, [headers]);
 
+  const animatedHeader = headers[currentHeaderIndex];
+
   return (
-    <h1 className="overflow-hidden text-5xl font-mono font-bold  text-5xl text-gray-800">
-      {headers[header].split("").map((char, index) => (
+    <h1 className="overflow-hidden text-5xl font-mono font-bold text-gray-800">
+      {animatedHeader.split("").map((char, index) => (
         <span
           className="animate-text-animate inline-block"
           key={`${char}-${index}`}

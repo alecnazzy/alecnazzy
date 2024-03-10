@@ -12,14 +12,15 @@ export default function Projects() {
     },
     {
       id: 2,
-      name: "Tobey Blog",
-      description: "A blog about my dog.",
+      name: "Photo Blog",
+      description: "A blog where I post pictures of my dog and things I like.",
       stack: [
-        "JavaScript",
+        "TypeScript",
         "React",
-        "Node.js",
         "Fastify",
+        "Node.js",
         "MongoDB",
+        "Firebase",
         "Tailwind CSS",
       ],
     },
@@ -58,7 +59,10 @@ export default function Projects() {
       >
         <option value="">All</option>
         <option value="JavaScript">JavaScript</option>
+        <option value="TypeScript">TypeScript</option>
         <option value="Node.js">Node.js</option>
+        <option value="React">React</option>
+        <option value="Fastify">Fastify</option>
         <option value="PHP">PHP</option>
       </select>
 
