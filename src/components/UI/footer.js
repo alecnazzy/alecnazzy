@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="w-full mt-10 mbtext-lg">
+    <footer className="w-full mt-10 mbtext-lg font-mono">
       <div className="w-full mx-auto p-4 flex items-center justify-center">
         <span classname="text-sm text-center text-gray-800">
           <img

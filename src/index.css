@@ -24,3 +24,28 @@ code {
 .card-back {
   transform: rotateY(180deg);
 }
+
+/*  */
+
+h1 {
+  overflow: hidden;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: white;
+}
+
+span {
+  display: inline-block;
+  animation: reveal 1.2s cubic-bezier(0.77, 0, 0.175, 1) 0.01s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes reveal {
+  0% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

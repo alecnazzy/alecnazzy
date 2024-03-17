@@ -50,7 +50,7 @@ export default function Projects() {
 
   return (
     <div id="projects" className="mt-12 mb-36">
-      <h1 className="text-5xl text-gray-800">Some of my projects</h1>
+      <h1 className="text-5xl text-gray-800 font-mono">Some of my projects</h1>
 
       <select
         value={filter.stack || ""}

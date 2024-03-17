@@ -6,7 +6,7 @@ export default function HeaderAnimate({ headers }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentHeaderIndex((index) => (index + 1) % headers.length);
-    }, 3000);
+    }, 3800);
 
     return () => clearInterval(interval);
   }, [headers]);
@@ -19,7 +19,7 @@ export default function HeaderAnimate({ headers }) {
         <span
           className="animate-text-animate inline-block"
           key={`${char}-${index}`}
-          style={{ animationDelay: `${index * 0.05}s` }}
+          style={{ animationDelay: `${index * 0.07}s` }}
         >
           {char === " " ? "\u00A0" : char}
         </span>

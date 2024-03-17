@@ -6,7 +6,7 @@ export default function TextAnimate({ text, img }) {
         alt="icon"
         className="h-10 w-10 grayscale group-hover:grayscale-0"
       />
-      <h1 className="text-2xl font-mono font-bold leading-6 text-white hover:text-amber-100">
+      <h1 className="text-2xl font-mono font-bold leading-6 text-white hover:text-orange-200">
         {text}
       </h1>
     </div>

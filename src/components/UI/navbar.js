@@ -1,8 +1,8 @@
 export default function Navbar() {
   return (
-    <div className="w-full top-0 mt-1 text-lg text-gray-800">
+    <div className="w-full top-0 mt-1 text-lg text-gray-800 font-mono">
       <ul className="flex justify-center justify-items-center">
-        <li className="mr-5 mr-96">Alec nazworth</li>
+        <li className="mr-5 mr-96 ">Alec Nazworth</li>
 
         <li className="mr-5 ml-48">
           <p className="text-lg text-gray-800 w-fit group">
