@@ -5,20 +5,20 @@ export default function Photos() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch(process.env.BACK_URL + "/api/v1/p", {
+    fetch(process.env.REACT_APP_BACKEND_URL + "/api/v1/p", {
       headers: {
-        // use API_KEY in .env
-        "x-api-key": process.env.API_KEY,
+        "x-api-key": process.env.REACT_APP_API_KEY,
+        accept: "application/json",
       },
     })
       .then((response) => response.json())
       .then((data) => {
         setPosts(data);
-        setLoading(false); // Set loading to false after data is fetched
+        setLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
-        setLoading(false); // Set loading to false in case of an error
+        setLoading(false);
       });
   }, []);
 
@@ -26,10 +26,8 @@ export default function Photos() {
     <div className="flex flex-col justify-center align-center items-center">
       <h1 className="text-5xl text-gray-800 font-mono mb-5">Photos</h1>
       <div className="grid grid-cols-3 gap-1 p-10 bg-gray-600 bg-opacity-40 w-10/12 rounded-2xl">
-        {/* Render filtered posts */}
         {posts.map((post) => (
           <div>
-            {/* Link to each post */}
             <div className="relative group h-52 w-auto overflow-hidden px-1 py-1">
               <img
                 src={post.image}
