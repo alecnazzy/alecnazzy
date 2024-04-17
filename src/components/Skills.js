@@ -1,34 +1,12 @@
-import TextAnimate from "./UI/text-animate";
+import Slider from "./UI/slider";
+import { useState } from "react";
 
 export default function Skills() {
   return (
-    <div className="flex flex-col justify-center align-center items-center">
-      <div className="grid grid-cols-3 gap-10 justify-center align-center items-center w-fit mb-40 ">
-        <div>
-          <h2 className="text-2xl text-gray-800 mb-8 font-mono">Languages</h2>
-
-          <TextAnimate text="JavaScript" img="icons/javascript-icon.png" />
-          <TextAnimate text="Node.js" img="icons/nodejs-icon.png" />
-          {/* <TextAnimate text="PHP" img="icons/php-icon2.png" /> */}
-        </div>
-        <div>
-          <h2 className="text-2xl text-gray-800 mb-8 font-mono">
-            Technologies
-          </h2>
-
-          <TextAnimate text="React" img="icons/react-icon2.png" />
-
-          <TextAnimate text="Fastify" img="icons/fastify-icon.png" />
-
-          {/* <TextAnimate text="Laravel" img="icons/laravel-icon2.png" /> */}
-        </div>
-        <div>
-          <h2 className="text-2xl text-gray-800 mb-8 font-mono">Tools</h2>
-
-          <TextAnimate text="Firebase" img="icons/firebase-icon.png" />
-          <TextAnimate text="MongoDB" img="icons/mongodb-icon.png" />
-        </div>
-      </div>
+    <div>
+      <Slider title="Languages" text="JavaScript, Java" />
+      <Slider title="Technology" text="React, Express" />
+      <Slider title="Tools" text="MongoDB, Firebase" />
     </div>
   );
 }

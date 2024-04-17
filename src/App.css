@@ -3,9 +3,15 @@
 }
 
 body {
-  background: linear-gradient(-45deg, #1f8fea, #05fefe, #0746bc);
-  /* background: #120f0e;
-  color: white; */
+  /* background: linear-gradient(-45deg, #1f8fea, #05fefe, #0746bc); */
+
+  /*  */
+  background: black;
+  color: white;
+
+  background: rgb(14, 15, 18);
+  font-family: monospace;
+  /*  */
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: max-content;

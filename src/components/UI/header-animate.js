@@ -14,7 +14,7 @@ export default function HeaderAnimate({ headers }) {
   const animatedHeader = headers[currentHeaderIndex];
 
   return (
-    <h1 className="overflow-hidden text-5xl font-mono font-bold text-gray-800">
+    <h1 className="overflow-hidden text-5xl font-mono font-bold">
       {animatedHeader.split("").map((char, index) => (
         <span
           className="animate-text-animate inline-block"

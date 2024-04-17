@@ -1,82 +1,59 @@
 import React from "react";
 import { useState } from "react";
 import CardFlip from "./UI/card-flip";
+import ProjectShowcase from "./UI/project-showcase";
 
 export default function Projects() {
   const [projects, setProjects] = useState([
+    // {
+    //   id: 1,
+    //   name: "alecnazzy.com",
+    //   description: "My own personal website.",
+    //   stack: ["React", "Tailwind CSS"],
+    // },
     {
       id: 1,
-      name: "alecnazzy.com",
-      description: "My own personal website.",
-      stack: ["JavaScript", "React", "Tailwind CSS"],
-    },
-    {
-      id: 2,
-      name: "Photo Blog",
-      description: "A blog where I post pictures of my dog and things I like.",
-      stack: [
-        "TypeScript",
-        "React",
-        "Fastify",
-        "Node.js",
-        "MongoDB",
-        "Firebase",
-        "Tailwind CSS",
-      ],
-    },
-    {
-      id: 3,
-      name: "GeekText",
+      title: "Gandalf's Dispensary",
       description:
-        "A collaborative project to build a fullstack e-commerce website for a bookstore.",
-      stack: ["PHP", "Laravel", "MySQL"],
+        "Gandalf's Dispensary is a fictional ecommerce store where fans of J.R.R. Tolkien's Middle-earth can browse and purchase a variety of pipeweed products and more inspired by the tales of hobbits, wizards, and adventures in the Shire.",
+      stack: ["React", "Express", "MongoDB"],
+      image: "/images/gandalf1.png",
+      link: "https://gandalfs-pipeweed-dispensary.onrender.com/",
+      stack: "React, Express, MongoDB",
     },
   ]);
 
-  const [filter, setFilter] = useState({});
-  const handleFilterChange = (key, value) => {
-    setFilter({ ...filter, [key]: value });
-  };
-
-  const filteredProjects = projects.filter((project) => {
-    let include = true;
-
-    if (filter.stack) {
-      include = project.stack.includes(filter.stack);
-    }
-
-    return include;
-  });
-
   return (
-    <div id="projects" className="mt-12 mb-36">
-      <h1 className="text-5xl text-gray-800 font-mono">Some of my projects</h1>
+    <div id="projects" className="mt-32 mb-36 w-screen">
+      <h1 className="text-5xl font-mono mb-16">Some of my projects</h1>
 
-      <select
-        value={filter.stack || ""}
-        onChange={(e) => handleFilterChange("stack", e.target.value)}
-        className="mt-5 rounded-md p-2 cursor-pointer transition-all duration-300 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-opacity-50"
-      >
-        <option value="">All</option>
-        <option value="JavaScript">JavaScript</option>
-        <option value="TypeScript">TypeScript</option>
-        <option value="Node.js">Node.js</option>
-        <option value="React">React</option>
-        <option value="Fastify">Fastify</option>
-        <option value="PHP">PHP</option>
-      </select>
-
-      <ul className="flex flex-row flex-wrap justify-center align-center mt-5">
-        {filteredProjects.map((project) => (
-          <li key={project.id} className="mr-5 ml-5 mb-10">
-            <CardFlip
-              title={project.name}
-              description={project.description}
-              stack={project.stack}
+      <ul className=" mt-5">
+        {projects.map((project) => (
+          <li
+            key={project.id}
+            className="mr-5 ml-5 mb-10 flex flex-col justify-center align-center items-center"
+          >
+            <ProjectShowcase
+              children={{
+                title: project.title,
+                description: project.description,
+                image: project.image,
+                link: project.link,
+                stack: project.stack,
+              }}
             />
           </li>
         ))}
       </ul>
+
+      <a
+        href="https://github.com/alecnazzy"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline"
+      >
+        Check out my GitHub for more
+      </a>
     </div>
   );
 }

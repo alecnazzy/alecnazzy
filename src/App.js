@@ -4,7 +4,6 @@ import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 import Footer from "./components/UI/footer";
 import Skills from "./components/Skills";
-import Photos from "./components/Photos";
 
 export default function App() {
   return (
@@ -13,7 +12,6 @@ export default function App() {
       <Profile />
       <Skills />
       <Projects />
-      <Photos />
       <Footer />
     </div>
   );

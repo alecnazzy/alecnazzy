@@ -1,11 +1,11 @@
 export default function Navbar() {
   return (
-    <div className="w-full top-0 mt-1 text-lg text-gray-800 font-mono">
+    <div className="w-full top-0 mt-1 text-lg  font-mono">
       <ul className="flex justify-center justify-items-center">
         <li className="mr-5 mr-96 ">Alec Nazworth</li>
 
         <li className="mr-5 ml-48">
-          <p className="text-lg text-gray-800 w-fit group">
+          <p className="text-lg  w-fit group">
             <a
               href="https://www.instagram.com/alecnazzy/"
               rel="noreferrer"
@@ -22,7 +22,7 @@ export default function Navbar() {
         </li>
 
         <li className="mr-5 ml-5">
-          <p className="text-lg text-gray-800 w-fit group">
+          <p className="text-lg  w-fit group">
             <a href="mailto:nazworthalec@outlook.com">
               nazworthalec@outlook.com
             </a>
@@ -35,7 +35,7 @@ export default function Navbar() {
         </li>
 
         <li className="mr-5 ml-5">
-          <p className="text-lg text-gray-800 w-fit group">
+          <p className="text-lg w-fit group">
             <a
               href="https://github.com/alecnazzy"
               rel="noreferrer"
