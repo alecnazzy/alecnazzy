@@ -2,7 +2,7 @@ import HeaderAnimate from "./UI/header-animate";
 
 export default function Profile() {
   return (
-    <div className="mt-32 mb-12 flex flex-col flex-wrap justify-center align-center items-center">
+    <div className="mt-32 mb-24 flex flex-col flex-wrap justify-center align-center items-center">
       <HeaderAnimate headers={["Full-Stack", "Web Development", "UX Design"]} />
 
       <p className="mx-auto w-3/6 text-center mt-5 text-xl font-mono p-7">
