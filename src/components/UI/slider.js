@@ -20,20 +20,24 @@ export default function Slider({ title, text }) {
 
   return (
     <div ref={shopTextRef}>
-      <div
-        className={`absolute h-72 ml-16 w-96 flex flex-col justify-center items-center transition-transform duration-1000 ${
-          isVisible ? "-translate-x-32" : "translate-x-96 origin-right"
-        }`}
-      >
-        <h1>{title}</h1>
+      <div class="flex flex-row w-full h-72">
+        <div
+          class={`text-white w-full text-lg ${
+            isVisible ? "w-1/4" : "w-full"
+          }  transition-width flex flex-col justify-center items-center`}
+        >
+          <h1>{title}</h1>
+        </div>
+        <div
+          class={`bg-white ${
+            isVisible ? "w-3/4" : "w-0"
+          }  transition-width flex flex-col justify-center items-start`}
+        >
+          <h1 className="text-black text-lg ml-24">{text}</h1>
+        </div>
       </div>
-      <div
-        className={`bg-white text-black h-72 flex flex-col justify-center items-start transition-transform duration-1000 ${
-          isVisible ? "translate-x-60" : "translate-x-full origin-left"
-        }`}
-      >
-        <p className="text-gray-700 text-lg ml-8">{text}</p>
-      </div>
+
+      {/*  */}
     </div>
   );
 }

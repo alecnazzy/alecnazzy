@@ -31,7 +31,7 @@ export default function Projects() {
         {projects.map((project) => (
           <li
             key={project.id}
-            className="mr-5 ml-5 mb-10 flex flex-col justify-center align-center items-center"
+            className="mr-5 ml-5 mb-24 flex flex-col justify-center align-center items-center"
           >
             <ProjectShowcase
               children={{
@@ -50,7 +50,7 @@ export default function Projects() {
         href="https://github.com/alecnazzy"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:underline"
+        className="hover:underline mt-6"
       >
         Check out my GitHub for more
       </a>

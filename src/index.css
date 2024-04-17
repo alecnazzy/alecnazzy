@@ -13,6 +13,10 @@ body {
   overflow-x: hidden;
 }
 
+.transition-width {
+  transition: width 0.5s ease; /* Adjust the duration (0.5s) and timing function (ease) as needed */
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
