@@ -7,7 +7,7 @@ export default function ProjectShowcase({ children }) {
         <img
           src={children.image}
           alt={children.title}
-          className="h-full object-cover group-hover:opacity-50 group-hover:filter group-hover:brightness-50 group-hover:blur-sm "
+          className="h-full object-cover group-hover:opacity-50 group-hover:filter group-hover:brightness-50 group-hover:blur-sm"
         />
         <div className="absolute inset-0 flex flex-col align-center items-center justify-center opacity-0 group-hover:opacity-100">
           <h2 className="text-2xl text-white font-mono text-center p-4 mb-4">

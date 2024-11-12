@@ -1,25 +1,8 @@
 export default function Navbar() {
   return (
-    <div className="w-full top-0 mt-1 text-lg  font-mono">
+    <div className="w-full top-0 mt-0 text-lg  font-mono bg-white text-black">
       <ul className="flex justify-center justify-items-center">
         <li className="mr-5 mr-96 ">Alec Nazworth</li>
-
-        <li className="mr-5 ml-48">
-          <p className="text-lg  w-fit group">
-            <a
-              href="https://www.instagram.com/alecnazzy/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              @alecnazzy
-            </a>
-            <img
-              src="icons/instagram-icon.png"
-              alt="instagram icon"
-              className="h-5 w-5 ml-2 inline-block invisible group-hover:visible"
-            />
-          </p>
-        </li>
 
         <li className="mr-5 ml-5">
           <p className="text-lg  w-fit group">
@@ -27,9 +10,9 @@ export default function Navbar() {
               nazworthalec@outlook.com
             </a>
             <img
-              src="icons/outlook-icon.png"
+              src="icons/icons8-paper-plane.gif"
               alt="email icon"
-              className="h-5 w-5 ml-2 inline-block invisible group-hover:visible"
+              className="h-5 w-5 ml-2 inline-block "
             />
           </p>
         </li>
@@ -44,9 +27,9 @@ export default function Navbar() {
               Github
             </a>
             <img
-              src="icons/github-icon.png"
+              src="icons/icons8-github.gif"
               alt="github icon"
-              className="h-5 w-5 ml-2 inline-block invisible group-hover:visible"
+              className="h-5 w-5 ml-2 inline-block "
             />
           </p>
         </li>

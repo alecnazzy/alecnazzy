@@ -9,9 +9,7 @@ export default function Profile() {
         I'm currently studying computer science at Florida International
         University in conjunction with serving in the Army National Guard. I am
         very passionate about web development, UX design, and learning new
-        technologies to play around with and improve my skills. When I am not
-        coding, I enjoy lifting weights, traveling, and hanging out with my dog
-        Tobey.
+        technologies to play around with and improve my skills.
       </p>
     </div>
   );
